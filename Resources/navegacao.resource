@@ -1,18 +1,29 @@
-*** Variable ***
-# Resouce utilizado para guardar locators utilizados em todas as partes da aplicação
+*** Variables ***
 
-&{navegacao}    
-...    header=id:app
-...    btn_game=xpath://div[@class="games-btn active router-link-active"]
-...    input_x=xpath://*[@class="make-bet-input"]
+&{scene_01}
+...    element_home=css:#n2-ss-6-align
+...    search_input=css:#s
+...    search_element=xpath://*[contains(text(), "Search Results for: ")]
+...    search_text=xpath://*[@id="loops-wrapper"]/article[{index}]//h2/a
 
-&{game}
-...    clock=xpath://*[@class="timer-large timer-large-wrap"]
-...    history=xpath://*[@class="crash-history-row crash-history-row-wrap"]
-...    value_history=xpath://*[@class="crash-history-row crash-history-row-wrap"]/a[1]
-...    players=xpath://*[contains(text(),"Players")]/../*[@class="right-value"]/span
+&{scene_02}
+...    element_home=css:#n2-ss-6-align
+...    search_input=css:#s
+...    search_element=xpath://*[contains(text(), "Search Results for: ")]
+...    search_text=xpath://*[@id="content"]/p
 
-&{aposta}
-...    item_inv=xpath://*[@class="inventory-item selectable hover"][{value}] //*[@class="item-price"]
-...    item_aposta=xpath://*[@class="item-overflow"]//*[contains(text(),"{price}")]/../../div
-...    bet_btn=xpath://div[@class="base-button base-button-wrap bet-btn b-10 lg primary"]
+&{scene_03}
+...    shop_btn=css:#menu-item-40>a
+...    shop_element=css:#woocommerce_price_filter-2
+...    html_btn=xpath://*[@id="woocommerce_product_categories-2"]//*[contains(text(), "HTML")]
+...    search_element=xpath://*[@id="content"]
+...    search_product=xpath://*[@id="content"]/ul/li[{index}]/a/h3
+
+
+&{scene_04}
+...    myacc_btn=css:#menu-item-50>a
+...    page_element=css:#page-36
+...    email_input=css:#reg_email
+...    password_input=css:#reg_password
+...    submit_btn=xpath://form[@class="register"] //input[@class="woocommerce-Button button"]
+...    check_record=xpath://*[contains(text(), "From your account dashboard you can view your")]
