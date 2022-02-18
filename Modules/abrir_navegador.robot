@@ -29,3 +29,8 @@ Abrir Navegador
 
 Verificar se pagina aberta com sucesso
     ${status}    Run Keyword And Return Status    Wait Until Element Is Visible    ${scene_01.element_home}    timeout=5
+    IF    ${status}
+        Log    Webpage carregada com Sucesso!    console=True
+    ELSE
+        Log    Erro ao abrir a webpage!    console=True
+    END

@@ -26,4 +26,5 @@
 ...    email_input=css:#reg_email
 ...    password_input=css:#reg_password
 ...    submit_btn=xpath://form[@class="register"] //input[@class="woocommerce-Button button"]
+...    error_msg=xpath://*[@class="woocommerce-error"]/li
 ...    check_record=xpath://*[contains(text(), "From your account dashboard you can view your")]

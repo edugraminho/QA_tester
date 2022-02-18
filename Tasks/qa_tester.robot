@@ -18,7 +18,7 @@ Abrir Browser
     
 Cenario 01
     [Documentation]    Task responsavel por verificar se o produto digitado foi listado
-    Log    Iniciando o processo de busca de Produtos    level=INFO    console=True
+    Log    Cenario 1: Iniciando o processo de busca de Produtos    level=INFO    console=True
     Verificar se pagina aberta com sucesso
     Digitar o nome do produto HTML no campo de pesquisa
     Conferir se o produto foi listado
@@ -30,7 +30,7 @@ Cenario 01
 
 Cenario 02
     [Documentation]    Task responsavel por pesquisar produtos nao existentes
-    Log    Iniciando o processo de busca de Produtos nao Existentes   level=INFO    console=True
+    Log    Cenario 2: Iniciando o processo de busca de Produtos nao Existentes   level=INFO    console=True
 
     Abrir Navegador    http://practice.automationtesting.in/
     Verificar se pagina aberta com sucesso
@@ -44,7 +44,7 @@ Cenario 02
 
 Cenario 03
     [Documentation]    Task responsavel por verificar se o produto digitado foi listado
-    Log    Iniciando o processo de busca de Produtos    level=INFO    console=True
+    Log    Cenario 3: Iniciando o processo de listar produto expecifico    level=INFO    console=True
     Abrir Navegador    http://practice.automationtesting.in/
     Clicar no menu Shop
     Clicar na subcategoria HTML
@@ -56,7 +56,7 @@ Cenario 03
 
 Cenario 04
     [Documentation]    Task responsavel por verificar se o produto digitado foi listado
-    Log    Iniciando o processo de busca de Produtos    level=INFO    console=True
+    Log    Cenario 4: Iniciando o processo de cadastrar usuario    level=INFO    console=True
 
     Abrir Navegador    http://practice.automationtesting.in/
 

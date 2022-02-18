@@ -7,8 +7,6 @@ artifactsDir: Outputs
 PATH:
   - .
 PYTHONPATH:
-  - Libraries
-  - Variables
   
 ignoreFiles:
   - .gitignore
