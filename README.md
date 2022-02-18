@@ -1,66 +1,51 @@
-# README for the robot
+# Nilo Saúde - Vaga QA Tester #
 
-Describe your robot here. E.g., what it does, what the requirements are, how to run it.
+### Descrição do Projeto ###
 
-## Development guide
+* Teste tecnico para a vaga QA Tester na empresa Nilo Saude, o Projeto consiste em criar automacoes navegando pela webpage 'http://practice.automationtesting.in/' 
 
-Run the robot locally:
+### Pré-requisitos ###
 
-```
-rcc run
-```
+* [Python](https://www.python.org/downloads)
+* [Chromedriver](https://chromedriver.chromium.org/downloads)
+* [RobotFramework](https://robotframework.org/)
+* [Robocorp](https://robocorp.com/docs/rcc/installation)
 
-Provide access credentials for Control Room connectivity:
+### Como configurar ###
+* 1 - Baixar e instalar o python. Na instalacao adicionar python as variaveis de ambiente
 
-```
-rcc configure credentials <your_credentials>
-```
+* 2 - Instalar o RCC Robocorp
+    ```
+    Windows
+        Abra o prompt de comando
+        Download: curl -o rcc.exe https://downloads.robocorp.com/rcc/releases/latest/windows64/rcc.exe
+        Adicionar ao caminho do sistema : Edit the system environment variables (https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+        Teste: rcc
+    ```
+    ```
+    Linux
+        Abra o terminal
+        Download: curl -o rcc https://downloads.robocorp.com/rcc/releases/latest/linux64/rcc
+        Torne o arquivo baixado executável: chmod a+x rcc
+        Adicionar ao caminho: sudo mv rcc /usr/local/bin/
+        Teste: rcc
+    ```
 
-Upload to Control Room:
+* 3 - Clonar ou baixar o projeto, pelo link [Github](https://github.com/edugraminho/QA_tester)
 
-```
-rcc cloud push --workspace <workspace_id> --robot <robot_id>
-```
+* 4 - Abrir o diretorio do projeto pelo terminal/cmd/powershell
 
-### Suggested directory structure
+* 5 - Iniciar o programa com 'rcc run'
 
-The directory structure given by the template:
+### Bibliotecas Utilizadas ###
 
-```
-├── devdata
-├── keywords
-│   └── keywords.robot
-├── libraries
-│   └── MyLibrary.py
-├── variables
-│   └── variables.py
-├── conda.yaml
-├── robot.yaml
-└── tasks.robot
-```
+* [RobotFramework](https://robotframework.org/)
+* [RPA.Tasks](https://rpaframework.org/libraries/tasks/)
+* [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+* [String](https://robotframework.org/robotframework/latest/libraries/String.html)
+* [Collections](https://robotframework.org/robotframework/latest/libraries/Collections.html)
 
-where
+### Autor ###
+* Eduardo Fior Graminho
+* [Github](https://github.com/edugraminho)
 
-- `devdata`: A place for all data/material related to development, e.g., test data. Do not put any sensitive data here!
-- `keywords`: Robot Framework keyword files.
-- `libraries`: Python library code.
-- `variables`: Define your robot variables in a centralized place. Do not put any sensitive data here!
-- `conda.yaml`: Environment configuration file.
-- `robot.yaml`: Robot configuration file.
-- `tasks.robot`: Robot Framework task suite - high-level process definition.
-
-In addition to these, you can create your own directories (e.g. `bin`, `tmp`). Add these directories to the `PATH` or `PYTHONPATH` section of `robot.yaml` if necessary.
-
-Logs and artifacts are stored in `output` by default - see `robot.yaml` for configuring this.
-
-Learn how to [handle variables and secrets](https://robocorp.com/docs/development-guide/variables-and-secrets/secret-management).
-
-### Configuration
-
-Give the task name and startup commands in `robot.yaml` with some additional configuration. See [Docs](https://robocorp.com/docs/setup/robot-structure#robot-configuration-file-robot-yaml) for more.
-
-Put all the robot dependencies in `conda.yaml`. These are used for managing the execution environment.
-
-### Additional documentation
-
-See [Robocorp Docs](https://robocorp.com/docs/) for more documentation.
